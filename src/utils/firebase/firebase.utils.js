@@ -8,14 +8,13 @@ import {
   signInWithEmailAndPassword,
 } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
-
 const firebaseConfig = {
-  apiKey: "AIzaSyDetUfX0itpmXKCZ_DgL_WD26bcMSTjSRg",
-  authDomain: "ecommerce-9e784.firebaseapp.com",
-  projectId: "ecommerce-9e784",
-  storageBucket: "ecommerce-9e784.appspot.com",
-  messagingSenderId: "876793360576",
-  appId: "1:876793360576:web:1254861f2e2e7b4805fd25"
+  apiKey: process.env.REACT_APP_FS_APIKEY,
+  authDomain: process.env.REACT_APP_FS_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_FS_PROJECTID,
+  storageBucket: process.env.REACT_APP_FS_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_FS_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_FS_APPID
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
