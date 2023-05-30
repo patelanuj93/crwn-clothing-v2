@@ -8,6 +8,7 @@ import {
   signInWithEmailAndPassword,
 } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
+
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FS_APIKEY,
   authDomain: process.env.REACT_APP_FS_AUTHDOMAIN,
